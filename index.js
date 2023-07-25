@@ -11,7 +11,7 @@ function checkInput() {
         pokerTable.innerHTML = "";
         pokerTable.appendChild(img);
 
-        fetch('http://flettl2.github.io/xkuhn/data/kuhn_explained.json')
+        fetch('https://flettl2.github.io/xkuhn/data/kuhn_explained.json')
         .then(response => response.json())
         .then(data => {
             var scenario = imgName.replace(/_/g, ' ');
