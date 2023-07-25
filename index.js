@@ -3,7 +3,7 @@ function checkInput() {
     var imgName = input.value;
     if (imgName) {
         var img = document.createElement("img");
-        img.src = "./imgs/" + imgName + ".png";
+        img.src = "./xkuhn/imgs/" + imgName + ".png";
         img.alt = imgName;
         img.style.width = "100%";
         img.style.height = "100%";
@@ -34,10 +34,10 @@ function checkInput() {
                 for (const plyr_type of plyr_types) {
                     var plot_img = document.createElement("img");
                     if (hero === plyr_type) {
-                        plot_img.src = "./imgs/" + imgName + "_" + plyr_type + "_" + "hero" + "_" + plot_type + ".png";
+                        plot_img.src = "./xkun/imgs/" + imgName + "_" + plyr_type + "_" + "hero" + "_" + plot_type + ".png";
                     }
                     else {
-                        plot_img.src = "./imgs/" + imgName + "_" + plyr_type + "_" + "vill" + "_" + plot_type + ".png";
+                        plot_img.src = "./xkuhn/imgs/" + imgName + "_" + plyr_type + "_" + "vill" + "_" + plot_type + ".png";
                     }
                     
                     plot_img.alt = imgName;
