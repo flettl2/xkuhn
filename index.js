@@ -3,16 +3,15 @@ function checkInput() {
     var imgName = input.value;
     if (imgName) {
         var img = document.createElement("img");
-        img.src = "../imgs/" + imgName + ".png";
+        img.src = "./imgs/" + imgName + ".png";
         img.alt = imgName;
         img.style.width = "100%";
         img.style.height = "100%";
-        // img.style.objectFit = "cover";
         var pokerTable = document.querySelector(".poker_table");
         pokerTable.innerHTML = "";
         pokerTable.appendChild(img);
 
-        fetch('http://127.0.0.1:5500/data/kuhn_explained.json')
+        fetch('http://flettl2.github.io/xkuhn/data/kuhn_explained.json')
         .then(response => response.json())
         .then(data => {
             var scenario = imgName.replace(/_/g, ' ');
@@ -35,16 +34,15 @@ function checkInput() {
                 for (const plyr_type of plyr_types) {
                     var plot_img = document.createElement("img");
                     if (hero === plyr_type) {
-                        plot_img.src = "../imgs/" + imgName + "_" + plyr_type + "_" + "hero" + "_" + plot_type + ".png";
+                        plot_img.src = "./imgs/" + imgName + "_" + plyr_type + "_" + "hero" + "_" + plot_type + ".png";
                     }
                     else {
-                        plot_img.src = "../imgs/" + imgName + "_" + plyr_type + "_" + "vill" + "_" + plot_type + ".png";
+                        plot_img.src = "./imgs/" + imgName + "_" + plyr_type + "_" + "vill" + "_" + plot_type + ".png";
                     }
                     
                     plot_img.alt = imgName;
                     plot_img.style.width = "100%";
                     plot_img.style.height = "100%";
-                    // plot_img.style.objectFit = "cover";
                     var plot_img_section = document.querySelector("#" + plyr_type + "_" + plot_type);
                     plot_img_section.innerHTML = "";
                     plot_img_section.appendChild(plot_img);
