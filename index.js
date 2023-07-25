@@ -34,7 +34,7 @@ function checkInput() {
                 for (const plyr_type of plyr_types) {
                     var plot_img = document.createElement("img");
                     if (hero === plyr_type) {
-                        plot_img.src = "https://flettl2.github.io/xkun/imgs/" + imgName + "_" + plyr_type + "_" + "hero" + "_" + plot_type + ".png";
+                        plot_img.src = "https://flettl2.github.io/xkuhn/imgs/" + imgName + "_" + plyr_type + "_" + "hero" + "_" + plot_type + ".png";
                     }
                     else {
                         plot_img.src = "https://flettl2.github.io/xkuhn/imgs/" + imgName + "_" + plyr_type + "_" + "vill" + "_" + plot_type + ".png";
