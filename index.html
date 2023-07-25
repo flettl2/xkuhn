@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xpoker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="explain">
+            <button class="evaluate_btn" onclick="checkInput()">Evaluate</button>
+            <input id="setup-input" type="text">
+            <p>Type a Kuhn poker scenario into the textbox above (eg. "0_", or "2_pb"). <br>
+               Then click "Evaluate" to see the recommended action and why.
+            </p>
+        </div>
+        <div class="visual">
+            <div class="plots">
+                <div id="p2_hist">
+                    <img src="../imgs/setup_hist.png" alt="setup img"/>
+                </div>
+                <div id="p2_bar">
+                    <img src="../imgs/setup_bar.png" alt="setup img"/>
+                </div>
+                <div id="p1_hist">
+                    <img src="../imgs/setup_hist.png" alt="setup img"/>
+                </div>
+                <div id="p1_bar">
+                    <img src="../imgs/setup_bar.png" alt="setup img"/>
+                </div>
+            </div>
+            <div class="poker_table">
+                <img src="../imgs/setup.png" alt="setup img"/>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
